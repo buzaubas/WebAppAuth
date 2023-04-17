@@ -1,0 +1,16 @@
+﻿<h1 class="h3 mb-3 font-weight-normal">
+
+    Please sign in
+</h1>
+
+<form method="post"> @*если не указан asp-action, то отправиться на метод который также называется*@
+    <input type="hidden" value="@ViewBag.Returnurl" name="returnurl"/>
+
+    <label class="sr-only">Email address</label>
+    <input type="test" name="username" placeholder="User name" class="form-control"/>
+
+     <label class="sr-only">Password</label>
+     <input type="password" name="password" class="form-control"/>
+
+     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
